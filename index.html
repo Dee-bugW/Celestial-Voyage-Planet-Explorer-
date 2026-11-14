@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#15172f" />
+<title>Celestial Voyage  Planet Explorer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars" id="stars" aria-hidden="true"></div>
+<div class="shell">
+<header class="header"><div class="logo"><span class="spark" aria-hidden="true"></span> celestial voyage</div><div class="pill"> <strong>PLANET EXPLORER</strong>  -  a tiny space adventure</div></header>
+<main>
+<section id="home" class="screen active" aria-labelledby="home-title">
+  <div class="hero"><div class="eyebrow"> mission control is calling </div><h1 id="home-title">A universe of <span>little wonders.</span></h1><p>Pick your destination, design your dream spacecraft, and make clever choices to complete your very own space mission. Ready captain?</p></div>
+  <div class="sectionheading"><h2>Where shall we explore? </h2><p>Choose your next adventure </p></div>
+  <div class="planetgrid" id="planetgrid"></div>
+  <p class="smallprint">Celestial Voyage Explorer</p>
+</section>
+<section id="build" class="screen" aria-labelledby="build-title">
+ <div class="stephead"><div><div class="eyebrow"> Step 01  -  engineer your adventure</div><h1 id="build-title">Build your little spaceship </h1><p id="missionBrief"></p></div><button class="btn secondary" id="backHome"> Planets</button></div>
+ <div class="builder"><div class="panel"><h2>Spacecraft workshop </h2><p class="subtitle">Pick one part from each category. Every upgrade improves something, but costs mass, money, or power!</p><div class="parts" id="parts"></div></div><aside class="panel sidepanel"><div class="rocketstage" id="rocketstage"></div><h2>Mission checklist </h2><div id="meters"></div><div class="notice" id="buildNotice" role="status"></div><div class="sidebuttons"><button class="btn primary large" id="launchBtn">Launch my mission </button><button class="btn secondary" id="randomBtn"> Surprise me with a build</button></div></aside></div>
+</section>
+<section id="travel" class="screen" aria-labelledby="travel-title"><div class="stephead"><div><div class="eyebrow" id="flightProgress"> Step 02  -  voyage in progress</div><h1 id="travel-title">Off we go! </h1><p id="flightSubtitle">Your cosmic adventure has begun.</p></div><button class="btn secondary" id="quitBtn"> End mission</button></div><div class="route"><span class="stop on"> Earth</span><span class="dash"></span><span class="stop on"> Journey</span><span class="dash"></span><span class="stop" id="routeDest"> Destination</span></div><div class="travelgrid"><div class="travelview" id="travelScene"><div class="travelrocket" id="flightRocket"></div><div class="caption" id="sceneCaption">DEEP SPACE  -  EN ROUTE</div></div><div class="panel" aria-live="polite"><div class="event-icon" id="eventIcon"></div><h2 class="event-title" id="eventTitle"></h2><p class="event-text" id="eventText"></p><div class="eventactions" id="eventActions"></div><div class="resources" id="resources"></div></div></div></section>
+<section id="end" class="screen" aria-labelledby="resultTitle"><div class="panel result"><div class="eyebrow"> mission report  -  planet explorer </div><div class="bigicon" id="resultIcon"></div><h1 id="resultTitle"></h1><p id="resultText"></p><div class="resultstats" id="resultStats"></div><div class="notice good" id="learnNote"></div><div class="resultbuttons" style="margin-top:24px"><button class="btn primary large" id="retryBtn"> Try this planet again</button><button class="btn secondary large" id="otherPlanetBtn"> Explore another planet</button></div></div></section>
+</main></div>
+<script src="script.js" defer></script>
+</body>
+</html>
